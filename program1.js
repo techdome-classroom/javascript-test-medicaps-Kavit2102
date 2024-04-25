@@ -1,4 +1,4 @@
-function longestSubstring(s) {
+function longestSubstring(arr) {
   // Implementation of longestSubstring function
   const positiveIntegers = arr.filter((num) => num > 0);
 
