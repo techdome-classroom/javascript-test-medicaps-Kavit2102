@@ -18,6 +18,6 @@ function smallestMissingPositiveInteger(nums) {
 
 console.log(smallestMissingPositiveInteger([3, 4, -1, 1]));
 console.log(smallestMissingPositiveInteger([1, 2, 0]));
-console.log(smallestMissingPositiveInteger([]));
+console.log(smallestMissingPositiveInteger([-1, -3, 4, 2]));
 
 module.exports = smallestMissingPositiveInteger;
