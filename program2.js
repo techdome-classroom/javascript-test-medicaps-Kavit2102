@@ -16,6 +16,8 @@ function smallestMissingPositiveInteger(nums) {
   return nums[nums.length - 1] + 1;
 }
 
-console.log(smallestMissingPositiveInteger())
+console.log(smallestMissingPositiveInteger({}))
+console.log(smallestMissingPositiveInteger({}))
+console.log(smallestMissingPositiveInteger({}))
 
 module.exports = smallestMissingPositiveInteger;
