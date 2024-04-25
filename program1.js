@@ -6,7 +6,7 @@ function longestSubstring(s) {
     char,
     pos;
 
-  for (i = 0; i < s.length; i += 1) {
+  for (i = 0; i < s.; i += 1) {
     char = string.charAt(i);
     pos = current_string.indexOf(char);
     if (pos !== -1) {
