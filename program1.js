@@ -1,5 +1,5 @@
 function longestSubstring(s) {
-  console.log("Hello");
+  console.log(s);
 }
 
 module.exports = { longestSubstring };
