@@ -5,7 +5,7 @@ function smallestMissingPositiveInteger(nums) {
   });
   if (nums.length === 0 || nums[nums.length - 1] <= 0) {
     return 1;
-  } // A, B
+  }
   for (var i = 0, k = 1; i < nums.length; ++i) {
     // C
     if (nums[i] > k) {
