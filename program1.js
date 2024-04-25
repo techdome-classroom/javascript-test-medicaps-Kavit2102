@@ -25,6 +25,6 @@ function longestSubstring(s) {
   return longestStringLength;
 }
 
-console.log(longestSubstring())
+console.log(longestSubstring("abcabcbb"));
 
 module.exports = { longestSubstring };
