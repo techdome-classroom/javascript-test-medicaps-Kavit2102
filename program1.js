@@ -1,5 +1,4 @@
 function longestSubstring(s) {
-  // Implementation of longestSubstring function
   let maxLength = 0;
   let start = 0;
   const charIndexMap = {};
