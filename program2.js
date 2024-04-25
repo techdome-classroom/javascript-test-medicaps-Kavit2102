@@ -7,7 +7,6 @@ function smallestMissingPositiveInteger(nums) {
     return 1;
   }
   for (var i = 0, k = 1; i < nums.length; ++i) {
-    // C
     if (nums[i] > k) {
       return k;
     }
