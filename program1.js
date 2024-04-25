@@ -1,21 +1,27 @@
 function longestSubstring(s) {
   // Implementation of longestSubstring function
-  const positiveIntegers = arr.filter((num) => num > 0);
+  let maxLength = 0;
+  let start = 0;
+  const charIndexMap = {};
 
-  // Step 2: Construct a set to store positive integers
-  const integerSet = new Set(positiveIntegers);
-
-  // Step 3: Iterate from 1 to the maximum value in the list
-  const max = Math.max(...positiveIntegers);
-  for (let i = 1; i <= max + 1; i++) {
-    // Return the first integer that is not present in the set
-    if (!integerSet.has(i)) {
-      return i;
+  // Iterate through the string
+  for (let end = 0; end < s.length; end++) {
+    const currentChar = s[end];
+    // If the character is already in the map and its index is after the start of the current substring,
+    // update the start of the substring to the index after the previous occurrence of the character.
+    if (
+      charIndexMap[currentChar] !== undefined &&
+      charIndexMap[currentChar] >= start
+    ) {
+      start = charIndexMap[currentChar] + 1;
     }
+    // Update the index of the current character in the map
+    charIndexMap[currentChar] = end;
+    // Update the maximum length
+    maxLength = Math.max(maxLength, end - start + 1);
   }
 
-  // Return max + 1 if all positive integers are present
-  return max + 1;
+  return maxLength;
 }
 
 module.exports = { longestSubstring };
